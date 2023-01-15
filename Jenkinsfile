@@ -1,5 +1,7 @@
 pipeline{
-	agent any
+	agent{
+		docker {image 'jenkins/agentruby'}
+		}
 	stages{
 		stage("saludo"){
 		steps {
